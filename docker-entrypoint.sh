@@ -4,7 +4,7 @@
 
 if [ "$PROCESS" == "restore" ]; then
     #This runs before restore
-    mv $MOUNT/Client_Settings.xml $MOUNT/Client_Settings.xml.bak
+    mv $MOUNT/.env $MOUNT/.env.bak
     export PASSPHRASE=$GPG_PW
     export AWS_ACCESS_KEY_ID=$IAM_ACCESS_KEY
     export AWS_SECRET_ACCESS_KEY=$IAM_SECRET_KEY
