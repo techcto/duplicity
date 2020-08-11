@@ -1,0 +1,17 @@
+version: '2'
+
+services: 
+
+  duplicity: 
+    build:
+      context: .
+    environment:
+      BUCKET: '${BUCKET}'
+      GPG_PW: '${GPG_PW}'
+      IAM_ACCESS_KEY: '${IAM_ACCESS_KEY}'
+      IAM_SECRET_KEY: '${IAM_SECRET_KEY}'
+      MOUNT: '${MOUNT}'
+      PROCESS: '${PROCESS}'
+      TIME: '${TIME}'
+    volumes:
+      - ${BACKUP_LOCATION}:${MOUNT}    
