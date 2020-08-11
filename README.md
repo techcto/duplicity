@@ -45,7 +45,7 @@ This repository is used to backup, export backups, and restore backups on Solode
 </table>
 
 ## Usage
-<strong>Export<strong><br>
+<strong>Export</strong><br>
 To export a specific backup, please use these instructions:
 <ol>
   <li>Clone the repo to your local or virtual machine</li>
